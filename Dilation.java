@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class Dilation {
 	
 	protected Mat image;
-	private String input;
 	private String output;
 	protected Mat structuralElement;
 	protected Point anchorPoint;
@@ -49,7 +48,7 @@ public class Dilation {
 			return;
 		}
 
-		input = args[0];
+		String input = args[0];
 		output = args[1];
 		
 		if(args.length > 2) {
